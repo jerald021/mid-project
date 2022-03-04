@@ -1,0 +1,100 @@
+/* STYLES AUX */
+.color1 {color: #072AC8;}
+.color2 {color: #43D2FF;}
+.color3 {color: #A2D6F9;}
+.color4 {color: #D1EDFF;}
+.color5 {color: #292E47;}
+.color6 {color: #6B708D;}
+.color7 {color: #F2F4FC;}
+.color8 {color: #ECF7FF;}
+.color9 {color: #FFC600;}
+
+/* RESET HTML */
+ body{
+    margin: 0;
+    padding: 0;
+} 
+
+h1{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 70px;
+}
+h2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 59px;
+}
+h3{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+}
+h4{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+}
+.body-medium{   
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+}
+.body-regular{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+}
+.headline-regular{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 150%;
+}
+.headline-medium{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 130%;
+}
+.caption1-regular{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+}
+.caption2.regular{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+}
+/* MY CSS */
+.menu-list{
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;     
+}
+.menu-list:hover{
+    color: #072AC8;
+}
+.menu-list:focus{
+    color: #072AC8;
+}
