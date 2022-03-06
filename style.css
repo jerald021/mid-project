@@ -1,4 +1,11 @@
-/* STYLES AUX */
+/*------------- RESET HTML ------------*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F2F4FC;
+} 
+/*-------------- STYLES AUX -----------*/
 .color1 {color: #072AC8;}
 .color2 {color: #43D2FF;}
 .color3 {color: #A2D6F9;}
@@ -8,19 +15,13 @@
 .color7 {color: #F2F4FC;}
 .color8 {color: #ECF7FF;}
 .color9 {color: #FFC600;}
-
-/* RESET HTML */
- body{
-    margin: 0;
-    padding: 0;
-} 
-
 h1{
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 60px;
     line-height: 70px;
+    color: #292E47;
 }
 h2{
     font-family: Roboto;
@@ -56,6 +57,7 @@ h4{
     font-weight: normal;
     font-size: 20px;
     line-height: 150%;
+    color: #6B708D;
 }
 .headline-regular{
     font-family: Roboto;
@@ -85,16 +87,75 @@ h4{
     font-size: 13px;
     line-height: 15px;
 }
-/* MY CSS */
+/* ------------------------------------------ MY CSS -----------------------*/
+/* ---------------NAV-BAR */
+.nav-bar{
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin: 35px 25px;
+}
+/* MENU LIST */
+.menu{
+}
 .menu-list{
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    color: #6B708D;
     text-decoration: none;
     list-style-type: none;
-    margin: 0;
-    padding: 0;     
-}
+    /* margin: 0px 20px;   */
+    padding: 0px 20px;
+    font-weight: bold;
+} 
 .menu-list:hover{
     color: #072AC8;
 }
 .menu-list:focus{
-    color: #072AC8;
+    color: #A2D6F9; /*wrong colorrrrrrrrrrrrrrrrrrrrrrrrr */
+}
+/* LOGO */
+.logo{
+    padding: 15px 33px;
+}
+
+
+/* CONTACT US BUTTON */
+.button{
+    display: inline-block;
+    background-color: #072AC8; /* default blue */
+    border: none;
+    color: white;
+    width: 150px;
+    height: 52px;    
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+.button:hover{
+     background-color: #292E47;
+}
+.button-text{
+    display: inline-block;
+    color: white;
+    margin: 15px 33px;
+    text-align: center;
+    text-decoration: none;
+}
+/*---------------- HERO SECTION */
+/* HERO TEXT */
+.hero{
+    
+}
+.container2{
+    display: flex;
+    left: 170px;
+}
+/* HERO IMAGE */
+.hero-image{
+    width: 570px;
+    height: 650px;    
 }
