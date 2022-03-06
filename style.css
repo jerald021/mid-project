@@ -4,6 +4,7 @@ body{
     padding: 0;
     font-family: 'Roboto', sans-serif;
     background-color: #F2F4FC;
+    color: #514D67;
 } 
 /*-------------- STYLES AUX -----------*/
 .color1 {color: #072AC8;}
@@ -21,7 +22,6 @@ h1{
     font-weight: bold;
     font-size: 60px;
     line-height: 70px;
-    color: #292E47;
 }
 h2{
     font-family: Roboto;
@@ -57,7 +57,6 @@ h4{
     font-weight: normal;
     font-size: 20px;
     line-height: 150%;
-    color: #6B708D;
 }
 .headline-regular{
     font-family: Roboto;
@@ -129,33 +128,89 @@ h4{
     border: none;
     color: white;
     width: 150px;
-    height: 52px;    
+    height: 52px;   
+    padding-top: 20px;
+    /* padding: 15px; */
     text-align: center;
     text-decoration: none;
     font-size: 17px;
     cursor: pointer;
 }
 .button:hover{
-     background-color: #292E47;
+    background-color: #292E47;
 }
 .button-text{
     display: inline-block;
     color: white;
-    margin: 15px 33px;
+    /* margin: 15px 33px; */
     text-align: center;
     text-decoration: none;
 }
 /*---------------- HERO SECTION */
-/* HERO TEXT */
-.hero{
-    
+.hero{    
 }
-.container2{
+.hero-container{
     display: flex;
-    left: 170px;
+    margin: 0px 110px;
+}
+/* HERO TEXT */
+.see-our-work{
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 20px;
+    color: #514D67;
 }
 /* HERO IMAGE */
 .hero-image{
+    /* display:inline-block; */
     width: 570px;
     height: 650px;    
+}
+/* CLIENT SECTION */
+.client-container{
+    margin: 85px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.grayscale{
+    filter: grayscale(100%);
+}
+/* RECENT PROJECTS  */
+.projects-container{
+    /* display: flex; */
+}
+.projects{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.project-article{
+    margin: 70px 40px 30px 0px; 
+    background-color: white;   
+}
+.project-image{
+    width: 340px;
+    height: 240px;
+}
+.project-title{
+    margin: 30px 30px;    
+}
+.learn-more{
+    margin: 54px 0px 30px 30px;
+}
+.learn-more-text{
+    text-decoration: none;
+    color: #072AC8 ;
+    font-weight: bold;
+}
+/* TESTIMONIAL */
+.testimonial-container{
+    background-color: #292E47;
+    background-image: url('/assets/testimonial-section/orbit.png');
+    margin: 150px 60px;    
+}
+.memojis{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
