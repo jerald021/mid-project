@@ -1,0 +1,23 @@
+{
+  "name": "mid-project",
+  "version": "1.0.0",
+  "description": "README TEST",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jerald021/mid-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jerald021/mid-project/issues"
+  },
+  "homepage": "https://github.com/jerald021/mid-project#readme",
+  "dependencies": {
+    "node-fetch": "^3.2.1"
+  }
+}

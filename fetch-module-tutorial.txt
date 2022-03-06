@@ -1,0 +1,14 @@
+//git init
+npm init
+npm install node-fetch
+ir a package.json y agregar: "type": "module",
+  "name": "mid-project",
+  "version": "1.0.0",
+  "description": "README TEST",
+  "main": "index.js",
+  ===>"type": "module",
+
+npm install -g json-server
+
+ejecutar json server
+json-server --watch db.json

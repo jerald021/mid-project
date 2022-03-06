@@ -214,3 +214,28 @@ h4{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+
+/* FOOTER*/
+.footer-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*-------------------------------------------- PAGE CONTACT US */
+.contact-us-container{
+    margin: 146px 60px;    
+}
+.input-value{
+    display:block;
+    background-color: #6B708D1A;
+    border: #6B708D1A;
+    padding: 22px 0px 22px 20px;
+    width: 100%;
+}
+.phone{
+    display: inline !important;
+}
+.submit{
+    width: 100%;
+}
