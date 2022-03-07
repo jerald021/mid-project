@@ -1,0 +1,4 @@
+recibir datos del form
+pasarlos por url
+guardar en db
+comporbar que se guarda

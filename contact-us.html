@@ -15,19 +15,19 @@
     <div class="nav-bar">
         <div class="container">
             <div class="logo">
-                <a href="#">
+                <a href="/index.html">
                     <img src="/assets/logos/circle.svg" alt="logo circle">
                 </a>                
             </div>
             <div class="menu headline-medium">
                 <ul class="menu-list">
-                    <li><a class="menu-list" href="#">Home</a></li>
+                    <li><a class="menu-list" href="/index.html">Home</a></li>
                     <li><a class="menu-list" href="#">Projects</a></li>
                     <li><a class="menu-list" href="#">Services</a></li>
                 </ul>
             </div>            
             <div class="button headline-medium">
-                <a class="button-text" href="#">Contact Us</a>
+                <a class="button-text" href="/contact-us.html">Contact Us</a>
             </div>
         </div>        
     </div>  
@@ -35,23 +35,23 @@
 
     <!-- CONTACT US FORM -->
     <div class="contact-us">
+        <h1>Contact Us</h1>
+
         <div class="contact-us-container">
-            <h1>Contact Us</h1>
-    
-            <form action="" method="get">
+            <form >//action="" method="post"
                 <label class="body-regular" for="fname" >Full Name *</label>
-                <input class="headline-regular input-value" type="text" id="fname" name="fname" value="" placeholder="Enter your full name">
-                <br>
-                <label class="body-regular" for="email">Email</label>
-                <input class="headline-regular input-value" type="email" id="email" name="email" value="" placeholder="Enter your email address">
-                <br>
-                <label class="body-regular phone" for="phone">Phone</label>
-                <input class="headline-regular input-value" type="tel" id="phone" name="phone" value="" placeholder="Enter your full name">
-                <br>
+                <input class="headline-regular input-value" type="text" id="fname" name="fname" value="" placeholder="Enter your full name">                
+                <div class="row">
+                    <label class="body-regular" for="email">Email</label>
+                    <br>
+                    <input class="headline-regular input-value" type="email" id="email" name="email" value="" placeholder="Enter your email address">
+                    <label class="body-regular phone" for="phone">Phone</label>
+                    <br>
+                    <input class="headline-regular input-value" type="tel" id="phone" name="phone" value="" placeholder="Enter your full name">
+                </div>
                 <label class="body-regular" for="message">Message *</label>
-                <textarea class="headline-regular input-value" name="message" id="message" cols="80" rows="10" placeholder="Write your message here ..."></textarea>
-                <br>
-                <input class="button submit" type="submit" value="Submit">
+                <textarea class="headline-regular input-value" name="message" id="message" cols="60" rows="10" placeholder="Write your message here ..."></textarea>
+                <input class="button submit" id="submit" type="submit" value="Submit">
             </form> 
         </div>
     </div>
@@ -65,18 +65,21 @@
                     <img src="/assets/logos/circle.svg" alt="logo circle">
                 </a>                
             </div>
-            <p class="headline-regular">2972 Westheimer Rd. Santa Ana, Illinois 85486 </p>
+            <p class="headline-regular">2972 Westheimer Rd. Santa Ana,
+                <br> Illinois 85486 </p>
         </div>
         <div class="footer-links">
-            <a class="headline-regular learn-more-text"href="#">Team</a>
-            <a class="headline-regular learn-more-text"href="#">Team</a>
-            <a class="headline-regular learn-more-text"href="#">Team</a>
-            <a class="headline-regular learn-more-text"href="#">Team</a>
-            <a class="headline-regular learn-more-text"href="#">Team</a>
-            <a class="headline-regular learn-more-text"href="#">Team</a>
-
+            <div class="links-top links">
+                <a class="headline-regular footer-style"href="#">Team</a>
+                <a class="headline-regular footer-style"href="#">Team</a>
+                <a class="headline-regular footer-style"href="#">Team</a>
+            </div>
+            <div class="links-bottom links">
+                <a class="headline-regular footer-style"href="#">Team</a>
+                <a class="headline-regular footer-style"href="#">Team</a>
+                <a class="headline-regular footer-style"href="#">Team</a>
+            </div>
         </div>
-    </div>
-    
+    </div>    
 </footer>
 </html>

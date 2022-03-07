@@ -214,17 +214,30 @@ h4{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
-
 /* FOOTER*/
 .footer-container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    margin: 30px 0px 80px 0;
+}
+.footer-style{
+    text-decoration: none;
+    /* text-align: center; */
+    color: #6B708D;
+}
+.links{
+    margin: 30px 0 px 150px 0px;
+    padding: 20px;
 }
 
 /*-------------------------------------------- PAGE CONTACT US */
-.contact-us-container{
+.contact-us{
     margin: 146px 60px;    
+}
+.contact-us-container{
+    display: flex;
+    flex-direction: column;
+    /* margin: 146px 60px;     */
 }
 .input-value{
     display:block;
@@ -232,10 +245,58 @@ h4{
     border: #6B708D1A;
     padding: 22px 0px 22px 20px;
     width: 100%;
+    margin: 15px 10px;
 }
 .phone{
-    display: inline !important;
+}
+.row{
+    display: flex;
+    flex-direction: row;
 }
 .submit{
     width: 100%;
+}
+/* SERVICES */
+.services{    
+}
+.services-container{
+    margin: 200px 40px 30px 70px; 
+}
+.services-single{
+    display: flex;
+}
+.service{
+    background-color: white;
+    margin: 70px 40px 64px 0px;
+    /* padding: 10px; */
+    box-shadow: 20px 10px 30px #dadada;
+
+}
+.service-icon{
+    background-color: #ECF7FF;
+    border-radius: 50%;    
+    width: 40px;
+    height: 40px;
+}
+.service-item{
+    margin: 30px 0px 30px 30px;
+}
+/* CTA SECTION  */
+.cta{    
+}
+.cta-container{
+    background-color:#FFC600;
+    margin: 136px 60px 170px 60px;
+    padding: 136px 110px 137px 110px;
+    text-align: center;
+}
+.cta-input{
+    display: flex;
+}
+.cta-email{
+    background-color: white;
+    background-image: url(/assets/newsletter/icon/mail.svg);
+    background-repeat: no-repeat;
+    background-position: 20px;
+    padding: 27px 0px 27px 70px;
 }
