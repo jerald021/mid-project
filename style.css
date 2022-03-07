@@ -128,9 +128,7 @@ h4{
     border: none;
     color: white;
     width: 150px;
-    height: 52px;   
-    padding-top: 20px;
-    /* padding: 15px; */
+    padding: 15px 10px 15px 10px;
     text-align: center;
     text-decoration: none;
     font-size: 17px;
@@ -214,6 +212,34 @@ h4{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.testimonial-title{
+    color: white;
+}
+.testimonial-description{
+    color: #FFC600;
+}
+.testimonial-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.testimonial-info{
+    /* display: flex; */
+
+}
+.testimonial-image{
+    border-radius: 50%;
+    width: 150px;
+    height: auto;
+    background-position: 20px;
+    
+}
+.testimonial-user{
+    color: #A2D6F9;
+}
+.testimonial-url{
+    color: white;
+}
 /* FOOTER*/
 .footer-container{
     display: flex;
@@ -224,6 +250,7 @@ h4{
     text-decoration: none;
     /* text-align: center; */
     color: #6B708D;
+    margin: 30px;
 }
 .links{
     margin: 30px 0 px 150px 0px;
@@ -240,14 +267,11 @@ h4{
     /* margin: 146px 60px;     */
 }
 .input-value{
-    display:block;
     background-color: #6B708D1A;
     border: #6B708D1A;
     padding: 22px 0px 22px 20px;
     width: 100%;
     margin: 15px 10px;
-}
-.phone{
 }
 .row{
     display: flex;
@@ -294,9 +318,31 @@ h4{
     display: flex;
 }
 .cta-email{
+    width: 40%;
     background-color: white;
     background-image: url(/assets/newsletter/icon/mail.svg);
     background-repeat: no-repeat;
     background-position: 20px;
+    margin-left: 25%;
     padding: 27px 0px 27px 70px;
+}
+.cta-subscribe{
+    margin: 15px 0px 15px 0px;
+    background-color: #072AC8;
+    padding: 8px;
+}
+/*------------------------------------------- PAGE PROJECT */
+.project{
+    margin: 136px 60px 170px 60px;
+}
+.project-header{
+    display: flex;
+    justify-content: space-between;
+}
+.project-main-image{
+    max-width: 100%;
+    margin: auto;
+    height: auto;
+    background-repeat: no-repeat;
+    box-shadow: 20px 10px 30px #d3d3d3;
 }
