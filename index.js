@@ -12,9 +12,9 @@ async function getWithFetch() {
         myData.forEach(data => {
              myDiv.innerHTML += `
              <div class="project-article">  
-             <img class="project-image" src="${data.image}" alt="">
+             <img class="project-image" src="${data.sizes.medium.source_url}" alt="">
              <h1 class="body-medium project-title">${data.title.rendered}<h1/>
-             <p class="headline-regular project-title">${data.description}<p/>  
+             <p class="headline-regular project-title">${data.acf.description}<p/>  
              <a class="learn-more learn-more-text" href="project.html">Learn more</a>
              </div>
              `                 
