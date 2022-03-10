@@ -1,29 +1,47 @@
 async function getWithFetch() {
-    const res = await fetch("http://localhost:3000/posts");
+    const res = await fetch("https://marketplace.freelancewebdesign.online/wp-json/wp/v2/projects");
     const finalRes = await res.json();
     // finalRes.splice(10);
     // return finalRes;
-    // console.log(finalRes);   
-    createPosts(finalRes);
-    }   
+    //  console.log(finalRes);   
+     createPosts(finalRes);
+    }
 
     async function createPosts(myData) {
         const myDiv = document.querySelector('.projects-item');
-
         myData.forEach(data => {
-            // console.log(myData);
-            // console.log(myDiv);
-            // console.log(myDiv);
-            myDiv.innerHtml += `
-               <div class=" 1">              
-               <h1>${data.title}<h1/>
-               <h2>${data.description}<h2/>
-               </div>
-            `                   
+             myDiv.innerHTML += `
+             <div class="project-article">  
+             <img class="project-image" src="${data.image}" alt="">
+             <h1 class="body-medium project-title">${data.title.rendered}<h1/>
+             <p class="headline-regular project-title">${data.description}<p/>  
+             <a class="learn-more learn-more-text" href="project.html">Learn more</a>
+             </div>
+             `                 
         });
-         myDiv.innerHTML = myDiv;
-         console.log(myDiv);
-
       }
-    getWithFetch();
-    //  window.addEventListener("DOMContentLoaded", ()=>createPosts());
+  
+getWithFetch();
+
+
+//----------------------- SEND FORM DATA
+// let form = document.querySelector('form');
+let fetchUrlForm = "http://localhost:8000/messages";
+async function saveData(event) {
+    event.preventDefault(); 
+    let data = {
+        fullname: document.querySelector('#fname').value,
+        email: document.querySelector('#email').value,
+        phone: document.querySelector('#phone').value,
+        message: document.querySelector('#message').value        
+    }
+    await fetch(fetchUrlForm, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })        
+}
+
+document.addEventListener('submit', saveData);

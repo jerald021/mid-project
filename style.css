@@ -176,6 +176,9 @@ h4{
 .projects-container{
     /* display: flex; */
 }
+.projects-item{
+    display: flex;
+}
 .projects{
     display: flex;
     justify-content: space-evenly;
@@ -196,6 +199,7 @@ h4{
     margin: 54px 0px 30px 30px;
 }
 .learn-more-text{
+    font-size: 19px;
     text-decoration: none;
     color: #072AC8 ;
     font-weight: bold;
@@ -471,9 +475,16 @@ h4{
     .project-article{
         margin: 0px 10px 10px 10px;
     }
+    .projects-item{
+        display: flex;
+        flex-direction: column;
+    }
     .project-image{
         width: 100%;
     }
+    .projects-item{
+    display: flex;
+}
     
 
 
