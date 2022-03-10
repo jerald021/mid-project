@@ -8,7 +8,6 @@
     <link rel="shortcut icon" href="/assets/logos/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <script src="index.js"></script>
 </head>
 <body>
     <!-- NAV-BAR -->
@@ -38,11 +37,13 @@
         <h1>Contact Us</h1>
         <div class="contact-us-container">
 
-            <form class="form-contact-form" method="POST">
+            <form id="form-input" method="POST">
                 <label class="body-regular" for="fname" >Full Name *</label>
                 <input class="headline-regular input-value" type="text" id="fname" name="fname" value="" placeholder="Enter your full name">                
                 <div class="row">
-                    <label class="body-regular" for="email">Email</label>                    
+                    
+                    <label class="body-regular" for="email">Email</label>   
+                    <br>        
                     <input class="headline-regular input-value" type="email" id="email" name="email" value="" placeholder="Enter your email address">
                     <label class="body-regular" for="phone">Phone</label>
                     <input class="headline-regular input-value" type="tel" id="phone" name="phone" value="" placeholder="Enter your full name">
@@ -55,6 +56,7 @@
         </div>
     </div>
     <!-- END CONTACT US FORM -->
+    <script src="index.js"></script>
 </body>
 <footer>
     <div class="footer-container">

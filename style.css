@@ -88,12 +88,17 @@ h4{
 }
 /* ------------------------------------------ MY CSS -----------------------*/
 /* ---------------NAV-BAR */
-.nav-bar{
-}
+.nav-bar {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    /* z-index: 10; */
+    background-color: #999999; 
+  }
 .container{
     display: flex;
     justify-content: space-around;
-    margin: 35px 25px;
+    /* margin: 35px 25px; */
 }
 /* MENU LIST */
 .menu{
@@ -205,15 +210,44 @@ h4{
     font-weight: bold;
 }
 /* TESTIMONIAL */
+.testimonial{
+}
 .testimonial-container{
     background-color: #292E47;
     background-image: url('/assets/testimonial-section/orbit.png');
     margin: 150px 60px;    
+    display: flex;
+    /* justify-content: space-evenly; */
+    /* flex-wrap: wrap; */
 }
 .memojis{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    /* display: flex;
+    justify-content: space-between; */
+    /* flex-wrap: wrap; */
+}
+.memoji1{
+    /* background-color: red; */
+    width: 200px;
+    height: 200px;    
+}
+.memoji2{
+    /* background-color: blue; */
+    width: 200px;
+    height: 200px;   
+    margin-left:750px;
+}
+.memoji3{
+    /* background-color: green; */
+    bottom: 100px;
+    width: 200px;
+    height: 200px;   
+
+}
+.memoji4{
+    /* background-color: yellow; */
+    width: 200px;
+    height: 200px;  
+    margin-left:750px;
 }
 .testimonial-title{
     color: white;
@@ -227,14 +261,16 @@ h4{
     text-align: center;
 }
 .testimonial-info{
-    /* display: flex; */
-
+    display: flex;
+     margin-left: 40%; 
 }
 .testimonial-image{
+    margin-top: 15px;
+    margin-right: 10px;
     border-radius: 50%;
-    width: 150px;
-    height: auto;
-    background-position: 20px;
+    width: 10%;
+    height: 50%;
+    /* background-position: 20px; */
     
 }
 .testimonial-user{
@@ -274,7 +310,11 @@ h4{
     border: #6B708D1A;
     padding: 22px 0px 22px 20px;
     width: 100%;
-    margin: 15px 10px;
+    margin-left: 0;
+    padding-left: 0;
+    /* margin: 15px 10px; */
+    margin-top: 10px;
+    /* margin-bottom: 10px; */
 }
 .row{
     display: flex;
@@ -296,14 +336,18 @@ h4{
     background-color: white;
     margin: 70px 40px 64px 0px;
     /* padding: 10px; */
-    box-shadow: 20px 10px 30px #dadada;
+    /* box-shadow: 20px 10px 30px #dadada; */
 
+}
+.service:hover{
+    box-shadow: 20px 10px 30px #dadada;
 }
 .service-icon{
     background-color: #ECF7FF;
     border-radius: 50%;    
-    width: 40px;
-    height: 40px;
+    padding: 25px;
+    width: 50px;
+    height: 50px;
 }
 .service-item{
     margin: 30px 0px 30px 30px;
@@ -334,6 +378,10 @@ h4{
     background-color: #072AC8;
     padding: 8px;
 }
+.cta-subscribe:hover{
+    background-color: 292E47;
+
+}
 /*------------------------------------------- PAGE PROJECT */
 .project{
     margin: 136px 60px 170px 60px;
@@ -347,16 +395,21 @@ h4{
     margin: auto;
     height: auto;
     background-repeat: no-repeat;
-    box-shadow: 20px 10px 30px #d3d3d3;
+    box-shadow: 20px 10px 30px #dadada;
 }
 
-/*----------------- MEDIA QUERY */
+/*------------------------------------------------------------------------------------------------ MEDIA QUERY */
 @media screen and (max-width: 414px) {
+    .nav-bar{
+        background-color: #F2F4FC;
+        position: absolute;
+        top: 0;
+    }
     .logo{
         display: none;
     }
     .menu-list{
-        padding: 10px;
+        padding: 5px;
         display: flex;
         flex-direction: column;
     }
@@ -364,14 +417,20 @@ h4{
         display: none;
     }
     /* HERO TEXT */
-    .hero h1{
-        font-size: 35px;
+    .hero h1 {
+        font-size: 25px;
+        line-height: 38px;
+        margin-bottom: 35px;
     }
     .hero-container{
         display: flex;
         flex-direction: column;
+        margin: 25px;
     }
-    .hero-text{        
+    .hero-text p{       
+        line-height: 25px; 
+        margin-bottom: 35px;
+        font-size: 15px;
         /* background-color:cyan; */
         /* display: flex;
         flex-direction: column; */
@@ -408,10 +467,19 @@ h4{
         display: none;
     }
     /*------------------------- SERVICES */
+    .service{
+        margin: 10px;
+        box-shadow: 20px 10px 30px #dadada;
+    }
     .services-single{
         display: flex;
         flex-direction: column;
         /* width: 100%; */
+    }
+    .services-container{
+        margin: 0 10px 0 10px;
+        padding-left: 10px;
+        padding-right: -10px;
     }
 
     /*------------------- CTA */
@@ -482,20 +550,27 @@ h4{
     .project-image{
         width: 100%;
     }
-    .projects-item{
-    display: flex;
-}
+    .projects-item{ 
+        display: flex;
+    }
+    .project{
+        font-size: 25px;
+        line-height: 38px;
+        margin: 0 10px 0 10px;
+        padding: 0;
+    }
     
 
 
 
+
+
+
+
+
+
+
+
+
     
-
-
-
-
-
-
-
-
 }

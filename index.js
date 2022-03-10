@@ -1,9 +1,6 @@
 async function getWithFetch() {
     const res = await fetch("https://marketplace.freelancewebdesign.online/wp-json/wp/v2/projects");
-    const finalRes = await res.json();
-    // finalRes.splice(10);
-    // return finalRes;
-    //  console.log(finalRes);   
+    const finalRes = await res.json();  
      createPosts(finalRes);
     }
 
@@ -11,8 +8,8 @@ async function getWithFetch() {
         const myDiv = document.querySelector('.projects-item');
         myData.forEach(data => {
              myDiv.innerHTML += `
-             <div class="project-article">  
-             <img class="project-image" src="${data.sizes.medium.source_url}" alt="">
+             <div class="project-article service">  
+             <img class="project-image" src="${data.better_featured_image.source_url}" alt="image">
              <h1 class="body-medium project-title">${data.title.rendered}<h1/>
              <p class="headline-regular project-title">${data.acf.description}<p/>  
              <a class="learn-more learn-more-text" href="project.html">Learn more</a>
@@ -23,9 +20,8 @@ async function getWithFetch() {
   
 getWithFetch();
 
-
 //----------------------- SEND FORM DATA
-// let form = document.querySelector('form');
+let form = document.querySelector('#form-input');
 let fetchUrlForm = "http://localhost:8000/messages";
 async function saveData(event) {
     event.preventDefault(); 
@@ -44,4 +40,4 @@ async function saveData(event) {
     })        
 }
 
-document.addEventListener('submit', saveData);
+form.addEventListener('submit', saveData);
