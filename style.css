@@ -234,7 +234,7 @@ h4{
     /* background-color: blue; */
     width: 200px;
     height: 200px;   
-    margin-left:750px;
+    margin-left: 700px;
 }
 .memoji3{
     /* background-color: green; */
@@ -247,7 +247,7 @@ h4{
     /* background-color: yellow; */
     width: 200px;
     height: 200px;  
-    margin-left:750px;
+    margin-left:700px;
 }
 .testimonial-title{
     color: white;
@@ -312,13 +312,15 @@ h4{
     width: 100%;
     margin-left: 0;
     padding-left: 0;
-    /* margin: 15px 10px; */
-    margin-top: 10px;
+     margin: 10px 0; 
+    /* margin-top: 20px; */
     /* margin-bottom: 10px; */
 }
 .row{
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
+    /* margin: 0;
+    padding: 0; */
 }
 .submit{
     width: 100%;
@@ -403,7 +405,7 @@ h4{
     .nav-bar{
         background-color: #F2F4FC;
         position: absolute;
-        top: 0;
+        /* top: 0; */
     }
     .logo{
         display: none;
@@ -418,6 +420,7 @@ h4{
     }
     /* HERO TEXT */
     .hero h1 {
+        margin-top: 150px;
         font-size: 25px;
         line-height: 38px;
         margin-bottom: 35px;
@@ -460,6 +463,12 @@ h4{
     }
     .testimonial-container{     
         margin: 0;
+    }
+    .testimonial-info{
+        margin-left: 30%;
+    }
+    .testimonial-image{
+        margin-top: 10%;
     }
     .memojis{
     }
@@ -513,8 +522,10 @@ h4{
     .contact-us{
         /* padding: 0px; */
         margin-left: 15px;
+        width:90%;
     }
     .contact-us-container{
+        /* margin-left: 25%; */
       
     }
     .row{
@@ -524,8 +535,8 @@ h4{
     .button{
     }
     .submit{
-        width: 360px;
-        margin-left: 10px;
+        /* width: 360px; */
+        /* margin-left: 10px; */
     }
 
     /*------------------- PAGE PROJECT */
@@ -558,6 +569,11 @@ h4{
         line-height: 38px;
         margin: 0 10px 0 10px;
         padding: 0;
+    }
+    .project-p{
+        line-height: 25px;
+        margin-bottom: 35px;
+        font-size: 15px;
     }
     
 
